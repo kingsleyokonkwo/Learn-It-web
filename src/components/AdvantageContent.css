@@ -1,0 +1,75 @@
+.advantage {
+    width: 100%;
+    background-color: var(--background);
+    transition: all 0.5s;
+   }
+
+.advantage--heading {
+    text-align: center;
+    padding: 4rem 0 4rem 0;
+    font-size: 2rem;
+}
+
+.advantage--container {
+    padding: 0 7rem 5rem 7rem;
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+
+.advantage--content {
+    background: var(--box-color);
+    padding: 1.2rem 1.5rem;
+    width: 100%;
+    border-radius: 5px;
+    opacity: 1;
+    box-shadow: var(--box-shadow)
+}
+
+.advantage--content:hover {
+    box-shadow: var(--box-shadow);
+    transform: scale(1.08);
+}
+
+.advantage--content .number {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.advantage--content .text {
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+@media screen and (max-width: 957px) {
+    .advantage--container {
+        max-width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        padding: .3rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .advantage--container {
+        grid-template-columns: 1fr;
+    }
+
+    .advantage--heading {
+        font-size: 1.7rem;
+        padding: 2rem;
+    }
+
+    .advantage--content .number {
+        font-size: 2rem;
+    }
+
+    .advantage--content .text {
+        font-size: 1.1rem;
+    }
+}

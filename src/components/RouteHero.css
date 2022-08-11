@@ -1,0 +1,43 @@
+.Routehero {
+    width: 100%;
+    height: 90vh;
+    background: #6b7280;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.heading {
+    text-align: center;
+    background-color: #1e293b;
+    
+    padding: 9rem 15rem;
+}
+
+.Routehero h1 {
+    font-size: 3rem;
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.Routehero p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 720px) {
+    .Routehero {
+        height: 60vh;
+    }   
+
+    .heading {
+        padding: 7rem 0;
+        width: 100%;
+    }
+
+    .Routehero h1 {
+        font-size: 2.5rem;
+    }
+}

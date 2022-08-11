@@ -1,0 +1,178 @@
+.hero {
+    height: 100%;
+    width: 100% !important;
+}
+
+.mask {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.mask::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: var(--background);
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+.hero .hero--content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: left;
+    width: 100%;
+    padding: 7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero--content-text {
+    width: 100%;
+}
+
+.hero--image {
+    height: 19.3rem;
+}
+
+.hero--content-text h3 {
+    font-size: 2.7rem;
+    padding: 1rem 0;
+    position: relative;
+    font-weight: 900;
+    
+}
+
+.hero--content-text h3::after {
+    content: "";
+    width: 350px;
+    height: 2px;
+    display: block;
+    background: var(--text-secondary);
+    position: absolute;
+    top: 50%;
+    left: 18%;
+}
+
+.hero--content-text h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    padding-bottom: 1rem;
+}
+
+.hero--content-text h1 span {
+    background-image: var(--text-secondary);
+    background-clip: text;
+    color: var(--text-secondary);
+}
+
+.hero--content-text h4 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-bottom: 2rem;
+    color: var(--text-primary);
+}
+
+@media screen and (max-width: 1222px) {
+    .hero--image {
+        height: 18rem;
+    }
+
+    .hero--content-text h3 {
+        font-size: 2rem;
+    }
+
+    .hero--content-text h1 {
+        font-size: 3rem;
+    }
+
+    .hero--content-text h4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1074px) {
+    .hero--image {
+        height: 15rem;
+    }
+
+    .hero--content-text h3 {
+        font-size: 1.6rem;
+    }
+
+    .hero--content-text h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero--content-text h4 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 957px) {
+    .hero--image {
+        display: none;
+    } 
+
+    .hero--content-text h3 {
+        font-size: 2rem;
+    }
+
+    .hero--content-text h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero--content-text h4 {
+        font-size: 1.5rem;
+    }
+
+    .hero--content-text h3::after {
+        left: 18%;
+    }
+
+    .mask {
+        height: 70vh;
+    }
+
+    .hero .hero--content {
+        top: 35%;
+    }
+}
+
+@media screen and (orientation: landscape) {
+   
+}
+
+@media screen and (max-width: 720px) { 
+
+    .hero--content-text h3::after {
+        display: none;
+    }
+
+    .hero .hero--content {
+        padding: 1.3rem;
+        top: 40%;
+    }
+
+    .hero--content-text h1 {
+        font-size: 2.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .hero--content-text h3 {
+        font-size: 1.7rem;
+    }
+
+    .hero--content-text h4 {
+        font-size: 1.2rem;
+        padding-bottom: 4rem;
+    }
+    
+}

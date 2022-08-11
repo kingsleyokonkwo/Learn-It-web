@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import "./index.css"
+import Advantage from "./routes/Advantage";
+import Formm from "./routes/Formm";
+import HireRoute from "./routes/HireRoute";
+import Home from "./routes/Home";
+import Pricing from "./routes/Pricing";
+
+
 
 function App() {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes basename="/Learn-It-web">
+        <Route path="/" element={<Home />} />
+        <Route path="/advantage" element={<Advantage />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/sign-up" element={<Formm />} />
+        <Route path="/hire" element={<HireRoute />} />
+      </Routes>
     </div>
   );
 }

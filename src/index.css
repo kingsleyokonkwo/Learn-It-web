@@ -1,13 +1,62 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Cabin', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --background: #fffdfa;
+  --text-primary: #000;
+  --text-secondary: #2563eb;
+  --accent: #2563eb;
+  --box-color: #f3f4f6;
+  --box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .4);
 }
+
+[data-theme="dark"] {
+  --background: #0f172a;
+  --text-primary: #e2e8f0;
+  --text-secondary: #f59e0b;
+  --accent: #f59e0b;
+  --box-color: #0c1425;
+  --box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .9);
+}
+
+body {
+  background: var(--background);
+}
+
+h1, h3, p, a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* (180deg,
+              rgba(0, 109, 91, 1) 0%
+              rgba(255, 174, 66, 1) 53%
+              rgba(255, 193, 204, 1) 100%); */
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: var(--accent);
+  color: #fff;
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--accent); 
+  transform: scale(1.02);
+}
+

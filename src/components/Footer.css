@@ -1,0 +1,45 @@
+.footer {
+    width: 100%;
+    padding: 5rem 4rem;
+    background: var(--background);
+    transition: all 0.5s;
+}
+
+.footer--container {
+    text-align: center;
+}
+
+.footer--container p {
+    padding: 1.4rem 0;
+    font-size: 1.2rem;
+}
+
+.footer--container p span {
+    background-image: var(--accent);
+    background-clip: text;
+    color: var(--text-secondary)
+}
+
+.footer--container h3 {
+    padding-bottom: 1.2rem;
+    font-size: 1.4rem;
+}
+
+.footer--container span {
+    padding: 0 .5rem;
+}
+
+.footer--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    color: var(--accent);
+}
+
+.footer--container h6 {
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--text-primary);
+}
