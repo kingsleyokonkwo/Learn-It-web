@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Learn-It-web/static/css/main.48951dcc.css",
+    "main.js": "/Learn-It-web/static/js/main.6728223c.js",
+    "static/media/maintain.png": "/Learn-It-web/static/media/maintain.283848050dc499bc7bc3.png",
+    "static/media/casual.png": "/Learn-It-web/static/media/casual.8c517146f5acf8789204.png",
+    "static/media/logo.png": "/Learn-It-web/static/media/logo.274d1597128da1763871.png",
+    "index.html": "/Learn-It-web/index.html",
+    "main.48951dcc.css.map": "/Learn-It-web/static/css/main.48951dcc.css.map",
+    "main.6728223c.js.map": "/Learn-It-web/static/js/main.6728223c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48951dcc.css",
+    "static/js/main.6728223c.js"
+  ]
+}
